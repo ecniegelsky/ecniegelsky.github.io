@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Shrikhand');
+
 *{margin:0;
 	padding:0;
 	box-sizing:border-box;}
@@ -37,15 +39,15 @@ header h1 {
 
 .navbar {
 	float:right;
-	padding-top: 90px;
+	padding-top: 90pxow ;
 }
 .clearfix:after{content:""; display:block; clear:both;}
 
-#content1 {background-color: #30547D;}
+#content1 {background-color: #90E4EB;}
 
-#content2 {background-color: #E83F52;}
+#content2 {background-color: #E8C7A2;}
 
-#content3 {background-color: #FFC546;}
+#content3 {background-color: #E8FFBE;}
 
 .graphic {width:120px; height:120px;
 		background-color:white;
@@ -56,14 +58,20 @@ header h1 {
 
 .navbar {text-align: right;}
 			
-.navlink {margin-right:20px;
+.navlink {
+		font-family: roboto;
+		margin-right:20px;
 		font-size: 18px
-		margin-bottom:18px;}
+		margin-bottom:18px
+		color-white;
+	}
 
-.footer {height: 100px;
+.footer {font-family: roboto;
+		height: 50px;
 		background-color: white;
 		text-align: center;
-		float: center;}
+		float: center;
+		margin-top:25px}
 
 .sectiontitle  {font-size: 40px;
 				vertical-align: middle;
@@ -71,6 +79,17 @@ header h1 {
 
 .bethlogo {padding-top: 18px;}
 
-#content2 .contentleft {
+.contentleft {
 
+	font-family: shrikhand; cursive;
+	font-size: 100px;
+}
+
+
+.contentright {
+
+	font-family: roboto;
+	font-size: 16px;
+	line-height: 1.5em;
+	background-color: white;
 }
