@@ -1,25 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Shrikhand');
 
+/*CSS Universal reset*/
 *{margin:0;
 	padding:0;
-	box-sizing:border-box;
-}
+	box-sizing:border-box; 
+} 
 
-.body {
+body {
 	font-family: sans-serif;
 	font-size: 16px; /*16px=1em*/
 	background-color: black
 }
 
-.navbar a {
+nav{
+	float:right;
+	padding-top: 90px;
+}
+
+nav a {
 	text-decoration: none;
 	color: white;
 	padding: 16px;
 }
 
-.navbar {
-	float:right;
-	padding-top: 90px;
+.workpic {
+	display: inline-block;
 }
 
 header h1 {
@@ -35,20 +40,16 @@ header h1 {
 .contentleft, .contentright {
 	width: 50%; 
 	float:left;
-}
-
-.contentleft, .contentright{
 	display:flex;
 	justify-content: center;
 	flex-direction: column;
-	min-height: 100vh;
-}
-
-.contentright {
-	padding-left:90px;
+	min-height: 100vh; /* set min-height: initial; in media query */
+	padding:0 90px;
 	font-size: 1em;
 }
-
+.content:nth-of-type(even) > * {
+	float:right;
+}
 .clearfix:after{content:""; display:block; clear:both;}
 
 #content1 {
@@ -69,26 +70,27 @@ header h1 {
 	position:absolute;
 	top:50%;
 	left:50%; transform:translate(-50%,-50%);
-	border-radius:50%
+	border-radius:50%;
 }
 
-.navbar {
+
+nav {
 	text-align: right;
+	font-size: 20px
 }
 			
-.navlink {
-	font-family: roboto;
-	margin-right:20px;
-	font-size: 18px
+nav a{
+	margin-right:40px;
+	font-family:roboto;
 	margin-bottom:18px
 	color-white;
 }
 
-.footer {
+footer {
 	font-family: roboto;
 	color: white;
 	height: 50px;
-	background-color: black;
+	/*background-color: black;*/
 	text-align: center;
 	float: center;
 	margin-top:25px
@@ -105,7 +107,7 @@ header h1 {
 }
 
 .contentleft {
-	font-family: shrikhand; cursive;
+	font-family: shrikhand, cursive;
 	font-size: 100em;
 }
 
@@ -115,3 +117,35 @@ header h1 {
 	line-height: 1.5em;
 	background-color: white;
 }
+
+ul {
+	list-style-type: none;
+}
+
+
+/*delete all this below after unit 5 */
+
+header {
+	background-color: #FFED74;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+ nav {
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+section {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+}
+  
+footer{
+	background-color: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+}
+
