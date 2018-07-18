@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Shrikhand');
+
+/*CSS Universal reset*/
+*{margin:0;
+	padding:0;
+	box-sizing:border-box; 
+} 
+
+body {
+	font-family: roboto;
+	font-size: 16px; /*16px=1em*/
+	background-color: black
+}
+
+nav{
+	float:right;
+	padding-top: 90px;
+	text-align: center;
+	font-size: 14px
+}
+
+nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	padding: 10px;
+	margin-right:20px;
+	font-family:roboto;
+	margin-bottom:18px;
+	float:center;
+	letter-spacing: 2px
+	font-weight: 800px;
+}
+
+nav a:hover { 
+background-color: #E8FFBE;
+color: black; 
+}
+
+
+header h1 {
+	display: inline-block;
+}
+
+.content {
+	width: 100%;
+	min-height: 100vh;	
+	position:relative;
+}
+
+.contentleft, .contentright {
+	width: 50%; 
+	float:left;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh; /* set min-height: initial; in media query */
+	padding:0 90px;
+	font-size: 1em;
+}
+
+.content:nth-of-type(even) > * {
+	float:right;
+}
+
+.clearfix:after {
+	content:""; 
+	display:block; 
+	clear:both;}
+
+#content1 {
+	background-color: #90E4EB;
+}
+
+#content2 {
+	background-color: #E8C7A2;
+}
+
+#content3 {
+	background-color: #E8FFBE;
+}
+
+.graphic {
+	width:120px; height:120px;
+	background-color:white;
+	position:absolute;
+	top:50%;
+	left:50%; transform:translate(-50%,-50%);
+	border-radius:50%;
+}
+
+		
+
+footer {
+	font-family: roboto;
+	color: white;
+	height: 50px;
+	/*background-color: black;*/
+	text-align: center;
+	float: center;
+	margin-top:25px
+}
+
+.sectiontitle  {
+	font-size: 40px;
+	vertical-align: middle;
+	text-align:center;
+}
+
+.bethlogo {
+	padding-top: 18px;
+}
+
+.contentleft {
+	font-family: shrikhand, cursive;
+	font-size: 100em;
+}
+
+.contentright {
+	font-family: roboto;
+	font-size: 16px;
+	line-height: 1.5em;
+	background-color: white;
+}
+
+
+ul {
+	list-style-type: none;
+}
+
+.workskills {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.skill {
+	float: left;
+  	width: 50%;
+  	height: 50%;
+  	outline: 3px solid #222;
+  	text-align: center;
+  	line-height: 50vh;
+}
+
+
+#grid {
+	padding: 0;
+}
+
+
+#firstbox {
+	background-image: url(../images/graphics.jpg);
+}
+
+#secondbox {
+	background-image: url(../images/photography.jpg);
+}
+
+
+#thirdbox {
+	background-image: url(../images/web.jpg);
+}
+
+
+#fourthbox {
+	background-image: url(../images/writing.jpg);
+}
+
