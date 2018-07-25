@@ -16,17 +16,17 @@ nav{
 	float:right;
 	padding-top: 90px;
 	text-align: center;
-	font-size: 14px
+	font-size: 1em
 }
 
 nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: white;
-	padding: 10px;
-	margin-right:20px;
+	padding: .5em;
+	margin-right:1.5em;
 	font-family:roboto;
-	margin-bottom:18px;
+	margin-bottom: 1em;
 	float:center;
 	letter-spacing: 2px
 	font-weight: 800px;
@@ -138,7 +138,7 @@ ul {
 	float: left;
   	width: 50%;
   	height: 50%;
-  	outline: 3px solid #222;
+  	/*outline: 3px solid #222;*/
   	text-align: center;
   	line-height: 50vh;
 }
@@ -150,20 +150,88 @@ ul {
 
 
 #firstbox {
-	background-image: url(../images/graphics.jpg);
+	background-image: url(../images/graphics.JPG)
+	background-size: cover; /*or try 600px*/
+	background-position: center;
 }
 
 #secondbox {
-	background-image: url(../images/photography.jpg);
+	background-image: url(../images/photography.JPG);
+	background-size: cover; /*or try 600px*/
+	background-position: center;
 }
 
 
 #thirdbox {
-	background-image: url(../images/web.jpg);
+	background-image: url(../images/web.JPG);
+	background-size: cover; or try 600px
+	background-position: center;
 }
 
 
 #fourthbox {
-	background-image: url(../images/writing.jpg);
+	background-image: url(../images/writing.JPG);
+	background-size: cover; or try 600px
+	background-position: center;
 }
 
+/*start of blogg css*/
+
+.blogpage{
+	font-family: "roboto", Roboto, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color:white;
+}
+
+main {
+	float: left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 300;
+}
+
+article {
+	padding: 1em, 0;
+}
+
+article + article {
+	border-top: 1px solid; #ccc;
+}
+
+article img {
+	max-width: 40%
+}
+
+article a {
+	color: #E8C7A2;
+	text-decoration: none;
+}
+
+aside {
+	padding-top: 1em;
+	float: right;
+	width: 30%;
+}
+
+ul {
+	padding-left: 1em;
+}
+
+
+#blogimages {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.clearfix:after {
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+}
