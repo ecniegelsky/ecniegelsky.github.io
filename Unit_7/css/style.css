@@ -42,6 +42,22 @@ header h1 {
 	display: inline-block;
 }
 
+
+ul {
+	list-style-type: none;
+}
+
+
+footer {
+	font-family: roboto;
+	color: white;
+	height: 50px;
+	background-color: black;
+	text-align: center;
+	float: center;
+	margin-top:25px
+}
+
 .content {
 	width: 100%;
 	min-height: 100vh;	
@@ -56,7 +72,7 @@ header h1 {
 	flex-direction: column;
 	min-height: 100vh; /* set min-height: initial; in media query */
 	padding:0 90px;
-	font-size: 1em;
+	/*font-size: 1em;*/
 }
 
 .content:nth-of-type(even) > * {
@@ -89,17 +105,6 @@ header h1 {
 	border-radius:50%;
 }
 
-		
-
-footer {
-	font-family: roboto;
-	color: white;
-	height: 50px;
-	/*background-color: black;*/
-	text-align: center;
-	float: center;
-	margin-top:25px
-}
 
 .sectiontitle  {
 	font-size: 40px;
@@ -112,8 +117,13 @@ footer {
 }
 
 .contentleft {
+/*	font-family: shrikhand, cursive;*/
+	/*font-size: 100em;*/
+}
+
+.sectiontitle {
 	font-family: shrikhand, cursive;
-	font-size: 100em;
+	font-size: 3em;
 }
 
 .contentright {
@@ -123,10 +133,6 @@ footer {
 	background-color: white;
 }
 
-
-ul {
-	list-style-type: none;
-}
 
 .workskills {
 	list-style: none;
@@ -141,6 +147,10 @@ ul {
   	/*outline: 3px solid #222;*/
   	text-align: center;
   	line-height: 50vh;
+  	font-size: 1.5em;
+  	font-family: roboto;
+  	text-transform: uppercase;
+  	color: white;
 }
 
 
@@ -150,42 +160,113 @@ ul {
 
 
 #firstbox {
-	background-image: url(../images/graphics.JPG)
+	background-image: url(../images/astronomy-dark.jpg);
 	background-size: cover; /*or try 600px*/
 	background-position: center;
 }
 
 #secondbox {
-	background-image: url(../images/photography.JPG);
+	background-image: url(../images/cracks-design.jpg);
 	background-size: cover; /*or try 600px*/
 	background-position: center;
 }
 
 
 #thirdbox {
-	background-image: url(../images/web.JPG);
+	background-image: url(../images/dark-marble.jpg);
 	background-size: cover; or try 600px
 	background-position: center;
 }
 
 
 #fourthbox {
-	background-image: url(../images/writing.JPG);
+	background-image: url(../images/color-conifer.jpg);
 	background-size: cover; or try 600px
 	background-position: center;
 }
 
 /*start of blogg css*/
 
-.blogpage{
+
+body {
+  font-family: roboto;
+  padding: 16px;
+  background: black
+}
+
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+.leftcolumn { 
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.postimage {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card a {
+	color: #E8C7A2;
+	text-decoration: none;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.blogpage{
 	font-family: "roboto", Roboto, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	background-color:white;
+	background-color:black;
 }
 
 main {
 	float: left;
+	background-color: white;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -193,7 +274,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 article {
-	padding: 1em, 0;
+	padding: 1em;
 }
 
 article + article {
@@ -201,7 +282,7 @@ article + article {
 }
 
 article img {
-	max-width: 40%
+	max-width: 40%;
 }
 
 article a {
@@ -220,6 +301,7 @@ ul {
 }
 
 
+
 #blogimages {
 	width: 100%;
 	margin-left: auto;
@@ -235,3 +317,4 @@ ul {
 	font-size: 0;
 	visibility: hidden;
 }
+*/
