@@ -13,7 +13,7 @@ body {
 }
 
 nav{
-	/*float:right;*/
+	float:right;
 	padding-top: 90px;
 	text-align: center;
 	font-size: 1em;
@@ -269,7 +269,6 @@ body {
 
 	header h1 {
 		display: block;
-		padding-top: 1em
 	}
 
 	.bethlogo {
@@ -277,11 +276,20 @@ body {
    		margin-left: auto;
     	margin-right: auto;
     	width: 50%;
+    	padding:0;
 	}
 
-	nav {
-	float: none;
-	}
+
+	nav a {
+   	margin-left: auto;
+    margin-right: auto;
+	padding: 1em;
+	margin-right:0;
+	margin-bottom:0;
+	float:none;
+	letter-spacing: 2px;
+	font-weight: 800px;
+}
 }
 /*
 END OF MEDIA QUERIES	*/
