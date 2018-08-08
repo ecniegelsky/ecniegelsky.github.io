@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Shrikhand');
+
+/*CSS Universal reset*/
+*{margin:0;
+	padding:0;
+	box-sizing:border-box; 
+} 
+
+body {
+	font-family: roboto;
+	font-size: 16px; /*16px=1em*/
+	background-color: black;
+}
+
+nav{
+	float:right;
+	padding-top: 90px;
+	text-align: center;
+	font-size: 1em;
+}
+
+nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	padding: .5em;
+	margin-right:1.5em;
+	font-family:roboto;
+	margin-bottom: 1em;
+	float:center;
+	letter-spacing: 2px;
+	font-weight: 800px;
+}
+
+nav a:hover { 
+background-color: #E8FFBE;
+color: black; 
+}
+
+
+header h1 {
+	display: inline-block;
+}
+
+
+ul {
+	list-style-type: none;
+}
+
+
+footer {
+	font-family: roboto;
+	color: white;
+	height: 50px;
+	background-color: black;
+	text-align: center;
+	float: center;
+	margin-top:25px;
+}
+
+
+.content {
+	width: 100%;
+	min-height: 100vh;	
+	position:relative;
+}
+
+.contentleft, .contentright {
+	width: 50%; 
+	float:left;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh; 
+	padding:0 90px;
+}
+
+.content:nth-of-type(even) > * {
+	float:right;
+}
+
+.clearfix:after {
+	content:""; 
+	display:block; 
+	clear:both;}
+
+#content1 {
+	background-color: #90E4EB;
+}
+
+#content2 {
+	background-color: #E8C7A2;
+}
+
+#content4 {
+	background-color: #E8FFBE;
+}
+
+.graphic {
+	width:120px; height:120px;
+	background-color:white;
+	position:absolute;
+	top:50%;
+	left:50%; transform:translate(-50%,-50%);
+	border-radius:50%;
+}
+
+
+.sectiontitle  {
+	font-size: 4em;
+	vertical-align: middle;
+	text-align:center;
+}
+
+.bethlogo {
+	padding-top: 18px;
+}
+
+.contentleft {
+	font-family: shrikhand, cursive;
+	font-size: 100em;
+}
+
+.sectiontitle {
+	font-family: shrikhand, cursive;
+	font-size: 3em;
+}
+
+.contentright {
+	font-family: roboto;
+	font-size: 16px;
+	line-height: 1.5em;
+	background-color: white;
+}
+
+
+.workskills {
+	list-style: none;
+	/*padding: 0;
+	margin: 0;*/
+}
+
+.skill {
+	float: left;
+  	width: 50%;
+  	height: 50%;
+  	text-align: center;
+  	line-height: 50vh;
+  	font-size: 1.5em;
+  	font-family: roboto;
+  	text-transform: uppercase;
+  	color: white;
+}
+
+
+#grid {
+	padding: 0;
+}
+
+
+#firstbox {
+	background-image: url(../images/wooden.jpg);
+	background-size: cover; /*or try 600px*/
+	background-position: center;
+}
+
+#secondbox {
+	background-image: url(../images/woodenflip.jpg);
+	background-size: cover; /*or try 600px*/
+	background-position: center;
+}
+
+
+#thirdbox {
+	background-image: url(../images/woodenflip.jpg);
+	background-size: cover; 
+	background-position: center;
+}
+
+
+#fourthbox {
+	background-image: url(../images/wooden.jpg);
+	background-size: cover; 
+	background-position: center;
+}
+
+
+
+/*START OF BLOG CSS*/
+
+body {
+  font-family: roboto;
+  background: black;
+}
+
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+.leftcolumn { 
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.postimage {
+  background-color: #90E4EB;
+  width: 100%;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card a {
+	color: #E8C7A2;
+	text-decoration: none;
+}
+
+/*END OF BLOG CSS*/
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 768px) {
+	.contentleft,.contentright {
+		width: 100%; 
+		float: none;
+		display: block;
+		min-height: initial; 
+		padding: 2em;
+	}
+
+	.content {
+		width: 100%;
+		min-height: initial;	
+		position:relative;
+	}
+
+	.graphic {
+		display: none;
+	}
+
+
+	.skill {
+		float: none;
+  		width: 100%;
+  		height: 1000%;
+  		text-align: center;
+  		line-height: 50vh;
+  		font-size: 1.5em;
+	}
+
+	header h1 {
+		display: block;
+	}
+
+	.bethlogo {
+		display: block;
+   		margin-left: auto;
+    	margin-right: auto;
+    	width: 50%;
+    	padding:0;
+	}
+
+
+	nav a {
+   	margin-left: auto;
+    margin-right: auto;
+	padding: 1em;
+	margin-right:0;
+	margin-bottom:0;
+	float:none;
+	letter-spacing: 2px;
+	font-weight: 800px;
+}
+
+	nav {
+	float: none;
+	}
+}
+
+/* blog media query*/
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
+
